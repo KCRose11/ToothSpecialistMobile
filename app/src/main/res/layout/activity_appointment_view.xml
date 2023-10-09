@@ -4,6 +4,221 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#6BE8F8"
     tools:context=".AppointmentView">
 
+
+    <TextView
+        android:id="@+id/textAppointmentView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/appointment_view"
+        android:textColor="#FCFDFD"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textAppointmentTicketNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="@string/appointment_ticketno"
+        android:textColor="#FDFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textAppointmentView"
+        app:layout_constraintHorizontal_bias="0.579"
+        app:layout_constraintStart_toStartOf="@+id/textAppointmentView"
+        app:layout_constraintTop_toBottomOf="@+id/textAppointmentView" />
+
+    <TextView
+        android:id="@+id/textTicketNo"
+        android:layout_width="14dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="16dp"
+        android:text="*"
+        android:textColor="#FDFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textAppointmentTicketNo"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/textAppointmentTicketNo"
+        app:layout_constraintTop_toBottomOf="@+id/textAppointmentTicketNo" />
+
+    <TextView
+        android:id="@+id/textFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/FullName"
+        android:textColor="#FDFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textTicketNo"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/textTicketNo"
+        app:layout_constraintTop_toBottomOf="@+id/textTicketNo" />
+
+    <TextView
+        android:id="@+id/textDoctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="*"
+        android:textColor="#FDFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textFullName"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/textFullName"
+        app:layout_constraintTop_toBottomOf="@+id/textFullName" />
+
+    <TextView
+        android:id="@+id/textPhoneNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/PhoneNo"
+        android:textColor="#FDFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textFullName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textFullName"
+        app:layout_constraintTop_toBottomOf="@+id/textDoctor" />
+
+    <TextView
+        android:id="@+id/textPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textColor="#FDFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textPhoneNo"
+        app:layout_constraintStart_toStartOf="@+id/textPhoneNo"
+        app:layout_constraintTop_toBottomOf="@+id/textPhoneNo" />
+
+    <TextView
+        android:id="@+id/textDoctors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Doctor"
+        android:textColor="#FDFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textPhoneNo"
+        app:layout_constraintStart_toStartOf="@+id/textPhoneNo"
+        app:layout_constraintTop_toBottomOf="@+id/textPhone" />
+
+    <TextView
+        android:id="@+id/textDctrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textColor="#FDFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textDoctors"
+        app:layout_constraintStart_toStartOf="@+id/textDoctors"
+        app:layout_constraintTop_toBottomOf="@+id/textDoctors" />
+
+
+    <TextView
+        android:id="@+id/textAppointmentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AppointmentTime"
+        android:textColor="#FDFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textDoctors"
+        app:layout_constraintStart_toStartOf="@+id/textDoctors"
+        app:layout_constraintTop_toBottomOf="@+id/textDctrs" />
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textColor="#FDFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textAppointmentTime"
+        app:layout_constraintStart_toStartOf="@+id/textAppointmentTime"
+        app:layout_constraintTop_toBottomOf="@+id/textAppointmentTime" />
+
+    <TextView
+        android:id="@+id/textAppointmentDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AppointmentDate"
+        android:textColor="#FDFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textAppointmentTime"
+        app:layout_constraintStart_toStartOf="@+id/textAppointmentTime"
+        app:layout_constraintTop_toBottomOf="@+id/textTime" />
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textColor="#FDFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textAppointmentDate"
+        app:layout_constraintStart_toStartOf="@+id/textAppointmentDate"
+        app:layout_constraintTop_toBottomOf="@+id/textAppointmentDate" />
+
+    <TextView
+        android:id="@+id/textServices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Services"
+        android:textColor="#FDFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textAppointmentDate"
+        app:layout_constraintStart_toStartOf="@+id/textAppointmentDate"
+        app:layout_constraintTop_toBottomOf="@+id/textDate" />
+
+    <TextView
+        android:id="@+id/textSrvcs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textColor="#FDFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textServices"
+        app:layout_constraintStart_toStartOf="@+id/textServices"
+        app:layout_constraintTop_toBottomOf="@+id/textServices" />
+
+    <Button
+        android:id="@+id/btnCreateAppointment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="@string/create_an_appointment"
+        app:layout_constraintEnd_toEndOf="@+id/textSrvcs"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="@+id/textSrvcs"
+        app:layout_constraintTop_toBottomOf="@+id/textSrvcs" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Cancel"
+        app:layout_constraintEnd_toEndOf="@+id/btnCreateAppointment"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/btnCreateAppointment"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreateAppointment" />
 </androidx.constraintlayout.widget.ConstraintLayout>

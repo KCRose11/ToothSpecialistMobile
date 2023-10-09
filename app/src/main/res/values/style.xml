@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="tooth">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="specialist">
+        <item name="android:textSize">38sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="register_wi">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="your_inform">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="Login">
+    <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="forgot_pass">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="new_password">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#CEC9C9</item>
+    </style>
+    <style name="search">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#CEC9C9</item>
+    </style>
+    <style name="amare_dulce">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="btnCancel" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+
+</resources>

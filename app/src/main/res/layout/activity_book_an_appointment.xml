@@ -1,9 +1,487 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Book_an_Appointment_Activity">
+    android:id="@+id/textBnAppointment"
+    android:layout_width="409dp"
+    android:layout_height="840dp"
+    tools:ignore="SpeakableTextPresentCheck"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="413dp"
+            android:layout_height="145dp"
+            android:src="@tools:sample/avatars"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/top_background_gradient" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="101dp"
+            android:layout_height="93dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/img_3"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.841"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textHello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="20dp"
+            android:text="Hello"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.219"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:text="Amare Delos Santos"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.524"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="413dp"
+            android:layout_height="512dp"
+            android:src="@tools:sample/avatars"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:srcCompat="@drawable/white_btn_background" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="BOOK AN APPOINTMENT"
+            android:textColor="#FFFDFD"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <EditText
+            android:id="@+id/textBookAppointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:ems="15"
+            android:inputType="text"
+            android:text="AppointmentTicketNo."
+            app:layout_constraintEnd_toEndOf="@+id/textView5"
+            app:layout_constraintHorizontal_bias="0.375"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            android:autofillHints="TicketNumber" />
+
+        <EditText
+            android:id="@+id/textFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:inputType="text|textPersonName"
+            android:text="@string/fullname"
+            app:layout_constraintEnd_toEndOf="@+id/textBookAppointment"
+            app:layout_constraintStart_toStartOf="@+id/textBookAppointment"
+            app:layout_constraintTop_toBottomOf="@+id/textBookAppointment" />
+
+        <EditText
+            android:id="@+id/textPhoneNo"
+            android:layout_width="315dp"
+            android:layout_height="39dp"
+            android:ems="15"
+            android:inputType="number"
+            android:text="@string/phoneno"
+            app:layout_constraintEnd_toEndOf="@+id/textFullName"
+            app:layout_constraintStart_toStartOf="@+id/textFullName"
+            app:layout_constraintTop_toBottomOf="@+id/textFullName" />
+
+        <EditText
+            android:id="@+id/textDoctors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:inputType="text|textPersonName"
+            android:text="@string/doctor"
+            app:layout_constraintEnd_toEndOf="@+id/textPhoneNo"
+            app:layout_constraintStart_toStartOf="@+id/textPhoneNo"
+            app:layout_constraintTop_toBottomOf="@+id/textPhoneNo" />
+
+        <EditText
+            android:id="@+id/textAppointmentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:inputType="datetime|time"
+            android:text="@string/appointmenttime"
+            app:layout_constraintEnd_toEndOf="@+id/textDoctors"
+            app:layout_constraintStart_toStartOf="@+id/textDoctors"
+            app:layout_constraintTop_toBottomOf="@+id/textDoctors" />
+
+        <EditText
+            android:id="@+id/textAppointmentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:inputType="datetime|date"
+            android:text="@string/appointmentdate"
+            app:layout_constraintEnd_toEndOf="@+id/textAppointmentTime"
+            app:layout_constraintStart_toStartOf="@+id/textAppointmentTime"
+            app:layout_constraintTop_toBottomOf="@+id/textAppointmentTime" />
+
+        <EditText
+            android:id="@+id/textServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:inputType="text"
+            android:text="@string/services"
+            app:layout_constraintEnd_toEndOf="@+id/textAppointmentDate"
+            app:layout_constraintStart_toStartOf="@+id/textAppointmentDate"
+            app:layout_constraintTop_toBottomOf="@+id/textAppointmentDate" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="130dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textAddAppointment" />
+
+        <Button
+            android:id="@+id/textAddAppointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/add_appointment"
+            android:textColor="#FBFBFB"
+            android:textColorLink="#FCFDFD"
+            app:iconTint="#009688"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textServices" />
+
+        <ImageView
+            android:id="@+id/imgDoctors"
+            android:layout_width="406dp"
+            android:layout_height="208dp"
+            android:src="@tools:sample/avatars"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            tools:srcCompat="@drawable/dentists" />
+
+        <ImageView
+            android:id="@+id/imgBckgrndText"
+            android:layout_width="406dp"
+            android:layout_height="192dp"
+            android:src="@tools:sample/avatars"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgDoctors"
+            tools:srcCompat="@drawable/white_btn_background" />
+
+        <TextView
+            android:id="@+id/textDocs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/our_dentists"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.561"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgDoctors" />
+
+        <TextView
+            android:id="@+id/textDoctor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="DR. DAVID B. MARTINEZ"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textDocs"
+            app:layout_constraintStart_toStartOf="@+id/textDocs"
+            app:layout_constraintTop_toBottomOf="@+id/textDocs" />
+
+        <TextView
+            android:id="@+id/textHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Head Dentist"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/textDoctor1"
+            app:layout_constraintHorizontal_bias="0.54"
+            app:layout_constraintStart_toStartOf="@+id/textDoctor1"
+            app:layout_constraintTop_toBottomOf="@+id/textDoctor1" />
+
+        <TextView
+            android:id="@+id/textDoctor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="DR. DONNA H. FERNANDEZ"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textHead"
+            app:layout_constraintHorizontal_bias="0.603"
+            app:layout_constraintStart_toStartOf="@+id/textHead"
+            app:layout_constraintTop_toBottomOf="@+id/textHead" />
+
+        <TextView
+            android:id="@+id/textAssociateD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Associate Dentist"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/textDoctor2"
+            app:layout_constraintStart_toStartOf="@+id/textDoctor2"
+            app:layout_constraintTop_toBottomOf="@+id/textDoctor2" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="413dp"
+            android:layout_height="179dp"
+            android:src="@tools:sample/avatars"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgBckgrndText"
+            tools:srcCompat="@drawable/services" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="405dp"
+            android:layout_height="496dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            app:srcCompat="@drawable/white_btn_background" />
+
+        <TextView
+            android:id="@+id/textServices2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/our_services"
+            android:textColor="#fff"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <TextView
+            android:id="@+id/textTeethWhitening"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/teeth_whitening"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textServices2"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="@+id/textServices2"
+            app:layout_constraintTop_toBottomOf="@+id/textServices2" />
+
+        <TextView
+            android:id="@+id/textDentalBraces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dental_braces"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textTeethWhitening"
+            app:layout_constraintStart_toStartOf="@+id/textTeethWhitening"
+            app:layout_constraintTop_toBottomOf="@+id/textTeethWhitening" />
+
+        <TextView
+            android:id="@+id/textCosmeticDentistry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cosmetic_dentistry"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textDentalBraces"
+            app:layout_constraintStart_toStartOf="@+id/textDentalBraces"
+            app:layout_constraintTop_toBottomOf="@+id/textDentalBraces" />
+
+        <TextView
+            android:id="@+id/textOralSurgery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oral_surgery"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textCosmeticDentistry"
+            app:layout_constraintStart_toStartOf="@+id/textCosmeticDentistry"
+            app:layout_constraintTop_toBottomOf="@+id/textCosmeticDentistry" />
+
+        <TextView
+            android:id="@+id/textDentalImplant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dental_implant"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textOralSurgery"
+            app:layout_constraintStart_toStartOf="@+id/textOralSurgery"
+            app:layout_constraintTop_toBottomOf="@+id/textOralSurgery" />
+
+        <TextView
+            android:id="@+id/textEndodontics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/endodontics"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textDentalImplant"
+            app:layout_constraintStart_toStartOf="@+id/textDentalImplant"
+            app:layout_constraintTop_toBottomOf="@+id/textDentalImplant" />
+
+        <TextView
+            android:id="@+id/textOrthodontics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orthodontics"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textInvisalign"
+            app:layout_constraintStart_toStartOf="@+id/textInvisalign"
+            app:layout_constraintTop_toBottomOf="@+id/textInvisalign" />
+
+        <TextView
+            android:id="@+id/textDentures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dentures"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textEndodontics"
+            app:layout_constraintStart_toStartOf="@+id/textEndodontics"
+            app:layout_constraintTop_toBottomOf="@+id/textEndodontics" />
+
+        <TextView
+            android:id="@+id/textCrown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/crown"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textDentures"
+            app:layout_constraintStart_toStartOf="@+id/textDentures"
+            app:layout_constraintTop_toBottomOf="@+id/textDentures" />
+
+        <TextView
+            android:id="@+id/textInvisalign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invisalign"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textCrown"
+            app:layout_constraintStart_toStartOf="@+id/textCrown"
+            app:layout_constraintTop_toBottomOf="@+id/textCrown" />
+
+        <TextView
+            android:id="@+id/textRootCanalTreatment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/root_canal_treatment"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textOrthodontics"
+            app:layout_constraintStart_toStartOf="@+id/textOrthodontics"
+            app:layout_constraintTop_toBottomOf="@+id/textOrthodontics" />
+
+        <TextView
+            android:id="@+id/textTeethCleaning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/teeth_cleaning"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textRootCanalTreatment"
+            app:layout_constraintStart_toStartOf="@+id/textRootCanalTreatment"
+            app:layout_constraintTop_toBottomOf="@+id/textRootCanalTreatment" />
+
+        <TextView
+            android:id="@+id/textDentalRestoration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dental_restoration"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textTeethCleaning"
+            app:layout_constraintStart_toStartOf="@+id/textTeethCleaning"
+            app:layout_constraintTop_toBottomOf="@+id/textTeethCleaning" />
+
+        <TextView
+            android:id="@+id/textPediatric dentistry"
+            android:layout_width="172dp"
+            android:layout_height="29dp"
+            android:text="@string/pediatric_dentistry"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textDentalSealant"
+            app:layout_constraintStart_toStartOf="@+id/textDentalSealant"
+            app:layout_constraintTop_toBottomOf="@+id/textDentalSealant" />
+
+        <TextView
+            android:id="@+id/textDentalSealant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dental_sealant"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textDentalRestoration"
+            app:layout_constraintStart_toStartOf="@+id/textDentalRestoration"
+            app:layout_constraintTop_toBottomOf="@+id/textDentalRestoration" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
